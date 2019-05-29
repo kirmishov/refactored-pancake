@@ -19,7 +19,7 @@ def get_webdriver(url, headless = False):
     return driver
 
 
-driver = get_webdriver(url)
+driver = get_webdriver(url, headless = True)
 html_content = driver.page_source
 
 soup = BeautifulSoup(html_content, "html.parser")
